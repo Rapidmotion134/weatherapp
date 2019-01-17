@@ -1,1 +1,1 @@
-# Weather App by Isaiah and Ameer
+# Weather App by Isaiah and Ameen
