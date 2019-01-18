@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-color:#282c34;
+    margin: 0;
+}
+header{
+    background-color: #000000;
+    color:#fff;
+    font: size 1.5em;
+    padding: 3px;
+}
+.table{
+    background-color:rgba(13,190,255,0.9);
+    color:#282c34;
+    padding: 35px;
+    font-size: 1.5em
+}
+.day{
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #282c34;
+    border-radius: 15%;
+    width: auto;
+}
+.location{
+    padding: 15px;
+}
+.place{
+    padding: 7px;  
+    background-color: lightest-blue;
+    width: 225px;
+}
