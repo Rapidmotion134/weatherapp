@@ -1,6 +1,17 @@
 if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-    document.getElementById('data').innerHTML="latitude: "+ position.coords.latitude + "<br>longitude: " + position.coords.longitude;
+  		navigator.geolocation.getCurrentPosition(showPosition);
+  	} else {
+  		alert('Geolocation is not supported in your browser');
+  	}
+
+function showPosition(position) {
+	var api = "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + 
+	"&lon=" + position.coords.longitude;
+
+	fetch(api).then(function(response) {
+    	return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
   });
 }
-
