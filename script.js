@@ -12,6 +12,9 @@ function showPosition(position) {
     	return response.json();
   })
   .then(function(myJson) {
-    document.getElementById("data").innerHTML = (JSON.stringify(myJson.name));
+    document.getElementById("name").innerHTML = (JSON.stringify(myJson.name));
+    document.getElementById("temp").innerHTML = (JSON.stringify(myJson.main.temp));
+    document.getElementById("high").innerHTML = (JSON.stringify(myJson.main.temp_max));
+    document.getElementById("low").innerHTML = (JSON.stringify(myJson.main.temp_min));
   })
 }
